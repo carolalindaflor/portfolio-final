@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Carolina Flores</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader__card">
+      <div class="loader__photo">
+        <img src="carolina-perfil1.jpeg" alt="Foto de Carolina Flores" loading="lazy" />
+      </div>
+      <h1 data-pt="Carregando portfólio..." data-es="Cargando portafolio...">Carregando portfólio...</h1>
+      <p data-pt="Preparando seus projetos com carinho." data-es="Preparando tus proyectos con cariño.">
+        Preparando seus projetos com carinho.
+      </p>
+      <div class="loader__bar">
+        <span class="loader__bar__fill"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header--container">
+    <div class="header--content">
+      <a href="#home" class="logo--header">Portfó<span>lio</span></a>
+      <nav class="menu--nav__container">
+        <ul id="menu" class="menu--nav__content" role="menu">
+          <li class="menu--nav__item"><a href="#home" data-pt="Bem-vindo" data-es="Bienvenido">Bem-vindo</a></li>
+          <li class="menu--nav__item"><a href="#about" data-pt="Sobre Mim" data-es="Sobre Mí">Sobre Mim</a></li>
+          <li class="menu--nav__item"><a href="#work" data-pt="Projetos" data-es="Proyectos">Projetos</a></li>
+          <li class="menu--nav__item"><a href="#skills" data-pt="Habilidades" data-es="Habilidades">Habilidades</a></li>
+          <li class="menu--nav__item"><a href="#contact" data-pt="Contato" data-es="Contacto">Contato</a></li>
+          <li class="menu--nav__item lang-switch">
+            <select id="langSelect" aria-label="Selecionar idioma">
+              <option value="pt">Português</option>
+              <option value="es">Español</option>
+            </select>
+          </li>
+          <li class="menu--nav__item">
+            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema" aria-pressed="false">
+              <span class="toggle-icon sun"></span>
+              <span class="toggle-icon moon"></span>
+              <span class="toggle-label">Dia</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section fade-in home--content">
+    <h1 data-pt="Bem-vindo ao meu Portfólio" data-es="Bienvenido a mi Portafolio">
+      Bem-vindo ao meu Portfólio
+    </h1>
+    <p data-pt="Aqui você encontra meus projetos, habilidades e formas de contato."
+       data-es="Aquí encontrarás mis proyectos, habilidades y formas de contacto.">
+       Aqui você encontra meus projetos, habilidades e formas de contato.
+    </p>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="about" class="section about fade-in">
+    <div class="about--content__image">
+      <img src="profile.png" alt="Foto Carolina Flores">
+    </div>
+    <div class="about__right">
+      <p class="welcome"
+         data-pt="Bem-vindo! Feliz em ter você em minha página."
+         data-es="¡Bienvenido! Me alegra tenerte en mi página.">
+         Bem-vindo! Feliz em ter você em minha página.
+      </p>
+      <p data-pt="Sou Carolina Flores, apaixonada por tecnologia e design digital..."
+         data-es="Soy Carolina Flores, apasionada por la tecnología y el diseño digital...">
+         Sou Carolina Flores, apaixonada por tecnologia e design digital...
+      </p>
+
+      <!-- Tags de destaque -->
+      <div class="about-tags">
+        <span class="tag">UX/UI</span>
+        <span class="tag">Front-End</span>
+        <span class="tag">Marketing</span>
+      </div>
+
+      <!-- Cards -->
+      <div class="about-cards">
+        <div class="card">
+          <h3 data-pt="Formação" data-es="Formación">Formação</h3>
+          <ul>
+            <li>Licenciada em Administração de Empresas (2009–2012)</li>
+            <li>UX/UI Design — Toti Diversidade (2025)</li>
+            <li>Cursando: Front-end e Marketing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-pt="Habilidades" data-es="Habilidades">Habilidades</h3>
+          <ul>
+            <li>Empatia</li><li>Criatividade</li><li>Trabalho em equipe</li>
+            <li>Comunicação</li><li>Organização</li><li>Pensamento visual</li>
+            <li>Aprendizado contínuo</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-pt="Idiomas" data-es="Idiomas">Idiomas</h3>
+          <ul>
+            <li>Português — nativo</li>
+            <li>Espanhol — intermediário</li>
+            <li>Inglês — básico</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="about-links">
+        <a href="javascript:void(0)" id="openCvBtn" class="btn btn--cv">
+          <i class="bx bx-file"></i> Ver CV
+        </a>
+        <a href="https://linkedin.com/in/carolina-flores-721bb5353" target="_blank" class="btn btn--ghost">
+          <i class="bx bxl-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:carolinafloresmd@gmail.com" class="btn btn--ghost">
+          <i class="bx bx-envelope"></i> E-mail
+        </a>
+        <a href="https://github.com/carolalindaflor" target="_blank" class="btn btn--ghost">
+          <i class="bx bxl-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="work" class="section work fade-in">
+    <h2 data-pt="Meus Projetos" data-es="Mis Proyectos">Meus Projetos</h2>
+    <div class="work__grid">
+      <article class="portfolio__item">
+        <img src="eco.jpeg" alt="Eco-Maxideka" />
+        <h3>Eco-Maxideka</h3>
+        <p>App de reciclagem e sustentabilidade.</p>
+      </article>
+      <article class="portfolio__item">
+        <img src="moda.jpeg" alt="Moda Sustentável" />
+        <h3>Moda Sustentável</h3>
+        <p>Landing page com UI acessível e clean.</p>
+      </article>
+      <article class="portfolio__item">
+        <img src="declyve.jpeg" alt="Declyve" />
+        <h3>Declyve</h3>
+        <p>App de venda de água com mapa e carrinho.</p>
+      </article>
+      <article class="portfolio__item">
+        <img src="educ-finanza.jpeg" alt="Educ-Finanza" />
+        <h3>Educ-Finanza</h3>
+        <p>Aplicativo de educação financeira.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Habilidades Técnicas -->
+  <section id="skills" class="section skills fade-in">
+    <h2 data-pt="Habilidades Técnicas" data-es="Habilidades Técnicas">Habilidades Técnicas</h2>
+    <div class="skills__categories">
+      <div class="skills__card">
+        <h3>Front-End</h3>
+        <ul class="skills__list">
+          <li><span>HTML</span><div class="bar"><div data-width="95%"></div></div></li>
+          <li><span>CSS</span><div class="bar"><div data-width="90%"></div></div></li>
+          <li><span>JavaScript</span><div class="bar"><div data-width="85%"></div></div></
+
+ <li><span>JavaScript</span><div class="bar"><div data-width="85%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skills__card">
+        <h3>UX/UI Design</h3>
+        <ul class="skills__list">
+          <li><span>Figma</span><div class="bar"><div data-width="85%"></div></div></li>
+          <li><span>Wireframes</span><div class="bar"><div data-width="80%"></div></div></li>
+          <li><span>Design System</span><div class="bar"><div data-width="75%"></div></div></li>
+          <li><span>Acessibilidade</span><div class="bar"><div data-width="70%"></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato com imagem e redes -->
+  <section id="contact" class="contact--section fade-in">
+    <div class="contact--container">
+      <!-- Lado esquerdo: imagem e redes sociais -->
+      <div class="contact--info">
+        <img src="contact-illustration.png" alt="Ilustração de contato" class="contact--image" />
+        <p>Vamos conversar!</p>
+        <div class="contact--social">
+          <a href="https://linkedin.com/in/carolina-flores-721bb5353" target="_blank">
+            <i class="bx bxl-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/carolalindaflor" target="_blank">
+            <i class="bx bxl-github"></i> GitHub
+          </a>
+        </div>
+        <div class="contact--float-icons">
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+        </div>
+      </div>
+
+      <!-- Lado direito: formulário -->
+      <form class="contact--form">
+        <h2 data-pt="Deixe seu recado." data-es="Deja tu mensaje.">Deixe seu recado.</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Telefone (opcional):</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h3>Carolina Flores</h3>
+      <p>Todos direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão fixo voltar ao topo -->
+  <a href="#home" class="back-to-top" aria-label="Voltar ao topo">↑</a>
+
+  <!-- Modal do CV -->
+  <div id="cvModal" class="modal">
+    <div class="modal-content">
+      <span class="cv-modal__close" aria-label="Fechar modal">&times;</span>
+      <h2>Meu CV</h2>
+      <iframe src="cv.pdf.jpeg" width="100%" height="600" style="border:none;"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
